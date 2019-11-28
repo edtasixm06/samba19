@@ -39,7 +39,8 @@ echo -e "lila\nlila" | smbpasswd -a lila
 echo -e "pla\npla" | smbpasswd -a pla
 # -------------------------------------------------------------------
 # Creació dels comptes samba i directoris dels usuaris ldap ---------
-bash ldapusers.sh
+# ha de ser un cop activat ldap/ nslcd...
+#bash /opt/docker/ldapusers.sh
 # ===================================================================
 
 

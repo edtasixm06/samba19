@@ -12,5 +12,11 @@
 # Configuració samba
 /usr/sbin/smbd && echo "smb Ok"
 /usr/sbin/nmbd && echo "nmb  Ok"
+
+# -------------------------------------------------------------------
+# Creació dels comptes samba i directoris dels usuaris ldap ---------
+# ha de ser un cop activat ldap/ nslcd...
+bash /opt/docker/ldapusers.sh
+# ===================================================================
 /bin/bash
 
