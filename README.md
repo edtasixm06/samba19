@@ -78,3 +78,10 @@ docker run --rm --name samba -h samba --net sambanet -it edtasixm06/samba19:base
         guest ok = yes
 ```
 
+
+ * **edtasixm06/samba19:pam** Host amb un servidor samba que té usuaris unix locals, usuaris samba locals
+   i usuaris de ldap. A aquests usuaris de ldap se'ls crea el compte de samba (hardcoded) i el seu home
+   (hardcoded: cal crear, copiar skel i assignar permisos). exporta els homes dels usuaris via el
+   share *[homes]*.
+
+
